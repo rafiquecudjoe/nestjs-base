@@ -1,8 +1,8 @@
 import { HttpStatus } from '@nestjs/common';
 import * as joi from 'joi';
-import { ResponseWithoutData } from 'src/common/entities/response.entity';
-import { Response } from 'src/common/response';
-import { JoiValidator } from 'src/utils/joi.validator';
+import { ResponseWithoutData } from '../../common/entities/response.entity';
+import { Response } from '../../common/response';
+import { JoiValidator } from '../../utils/joi.validator';
 import { CreateArithmeticDto } from './dto/create-arithmetic.dto';
 
 export class ArithmeticValidator {
