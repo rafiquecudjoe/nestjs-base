@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ArithmeticController } from './arithmetic.controller';
 import { ArithmeticService } from './arithmetic.service';
+import { ArithmeticValidator } from './arithmetic.validator';
 
 describe('ArithmeticController', () => {
   let controller: ArithmeticController;
@@ -8,7 +9,7 @@ describe('ArithmeticController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [ArithmeticController],
-      providers: [ArithmeticService],
+      providers: [ArithmeticService,ArithmeticValidator],
     }).compile();
 
     controller = module.get<ArithmeticController>(ArithmeticController);
