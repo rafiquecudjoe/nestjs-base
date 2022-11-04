@@ -7,7 +7,7 @@ describe('ArithmeticService', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [ArithmeticService,ArithmeticValidator],
+      providers: [ArithmeticService, ArithmeticValidator],
     }).compile();
 
     service = module.get<ArithmeticService>(ArithmeticService);

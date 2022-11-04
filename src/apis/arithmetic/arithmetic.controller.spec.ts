@@ -9,7 +9,7 @@ describe('ArithmeticController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [ArithmeticController],
-      providers: [ArithmeticService,ArithmeticValidator],
+      providers: [ArithmeticService, ArithmeticValidator],
     }).compile();
 
     controller = module.get<ArithmeticController>(ArithmeticController);
