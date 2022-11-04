@@ -5,6 +5,6 @@ import { ArithmeticValidator } from './arithmetic.validator';
 
 @Module({
   controllers: [ArithmeticController],
-  providers: [ArithmeticService,ArithmeticValidator]
+  providers: [ArithmeticService, ArithmeticValidator],
 })
 export class ArithmeticModule {}

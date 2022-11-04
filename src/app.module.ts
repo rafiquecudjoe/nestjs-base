@@ -1,4 +1,4 @@
-import { MiddlewareConsumer, Module, } from '@nestjs/common';
+import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { ScheduleModule } from '@nestjs/schedule';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -17,10 +17,10 @@ import { ArithmeticModule } from './apis/arithmetic/arithmetic.module';
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer
-      // .apply(IsClient)
-      // .exclude({ path: '/api/v1/api-clients', method: RequestMethod.POST }, { path: '/', method: RequestMethod.GET })
-      // .forRoutes({ path: '*', method: RequestMethod.ALL });
+    consumer;
+    // .apply(IsClient)
+    // .exclude({ path: '/api/v1/api-clients', method: RequestMethod.POST }, { path: '/', method: RequestMethod.GET })
+    // .forRoutes({ path: '*', method: RequestMethod.ALL });
 
     consumer.apply(IsAdmin);
     // .forRoutes(
