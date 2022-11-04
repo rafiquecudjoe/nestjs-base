@@ -1,0 +1,47 @@
+previewsEnabled: true
+previewsExpireAfterDays: 1
+
+services:
+- type: web
+  name: hng-stage-2-task
+  env: docker
+  region: oregon
+  plan: starter
+  branch: main
+  dockerfilePath: ./nest-app/Dockerfile
+  dockerContext: ./nest-app
+  # domains:
+  #   - api.coolapp.dev
+#   envVars:
+#   - key: PORT
+#     value: 4000
+#   - key: EXAMPLE_GENERATE_SECRET
+#     generateValue: true
+#   - key: EXAMPLE_NO_SYNC
+#     sync: false
+
+#   - key: DB_HOST
+#     fromDatabase:
+#       name: coolapp-prod
+#       property: host
+#   - key: DB_PORT
+#     fromDatabase:
+#       name: coolapp-prod
+#       property: port
+#   - key: DB_USERNAME
+#     fromDatabase:
+#       name: coolapp-prod
+#       property: user
+#   - key: DB_PASSWORD
+#     fromDatabase:
+#       name: coolapp-prod
+#       property: password
+#   - key: DB_DATABASE_NAME
+#     fromDatabase:
+#       name: coolapp-prod
+#       property: database
+
+# databases:
+# - name: coolapp-prod
+#   databaseName: coolapp_production
+#   user: coolapp_production_user
