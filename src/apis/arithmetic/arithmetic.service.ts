@@ -1,8 +1,8 @@
 import { HttpStatus, Injectable } from '@nestjs/common';
-import { ResponseWithData } from 'src/common/entities/response.entity';
-import { Constants } from 'src/common/enums/constants.enum';
-import { Response } from 'src/common/response';
-import logger from 'src/utils/logger';
+import { ResponseWithData } from '../../common/entities/response.entity';
+import { Constants } from '../../common/enums/constants.enum';
+import { Response } from '../../common/response';
+import logger from '../../utils/logger';
 import { ArithmeticValidator } from './arithmetic.validator';
 import { CreateArithmeticDto, OperationType } from './dto/create-arithmetic.dto';
 

@@ -7,7 +7,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { Response } from 'express';
-import { ResponseWithData, ResponseWithoutData } from 'src/common/entities/response.entity';
+import { ResponseWithData, ResponseWithoutData } from '../../common/entities/response.entity';
 import { ArithmeticService } from './arithmetic.service';
 import { CreateArithmeticDto } from './dto/create-arithmetic.dto';
 
